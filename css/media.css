@@ -1,0 +1,15 @@
+@media (max-width: 1600px){
+    .services_row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 2/3;
+    }
+}
+
+@media (max-width: 770px){
+    .services_row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 2/3;
+    }
+}

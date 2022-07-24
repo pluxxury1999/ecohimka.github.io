@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="css/zero.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <meta html-equiv="Content-type" charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1">
+    <title>HTML5</title>
+</head>
+
+<body id="body">
+
+    <header class="header">
+        <h1 class="header_logo">ekoximka</h1>
+        <nav class="header_nav"> 
+            <a href="#about" class="nav_link">Про нас</a> 
+            <a href="#services" class="nav_link">Послуги</a> 
+            <a href="#prices" class="nav_link">Ціни</a> 
+            <a href="#contacts" class="nav_link">Контакти</a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="burger__menu">
+                <div class="sidebar">
+                    <div class="sidebar__body">
+                        <a href="#about" class="mobile-nav_link">Про нас</a> 
+                        <a href="#services" class="mobile-nav_link">Послуги</a> 
+                        <a href="#prices" class="mobile-nav_link">Ціни</a> 
+                        <a href="#contacts" class="mobile-nav_link">Контакти</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header_contact">
+            <a class="header_callback_btn ">Залишити заявку</a>
+        </div>
+        <div class="header_content">
+            <div class="header_title"> ЕкоХімка -
+                <br>робимо хімчистку доступною </div>
+            <div class="header_subtitle"> Якісний сервіс за демократичними цінами </div>
+            <div class="button">
+                <a class="callback__btn">Оставить заявку<img src="img/doc_icon.svg" class="callback__icon"></a>
+                <div class="popup" id="popup">
+                    <div class="popup_body">
+                        <form action="telegram.php" method="POST" class="popup_content" autocomplete = "off"> 
+                           <a class="popup_close">X</a> 
+                           <span class="popup_title">Введіть ваші данні</span>
+                            <input type="text" name="user_name" required   placeholder="Ваше ім'я">
+                            <input type="text" id="user_phone" name="user_phone" required placeholder="+38 (0__) ___-__-__">
+                            <textarea name="user_info" maxlength="210" placeholder="Опишіть забруднення за бажанням (коротко)"></textarea>
+                            <input type="submit" class="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        </header>
+    <section class="about" id="about"> </section>
+    <section class="services" id="services">
+        <h2 class="section_title">Послуги</h2>
+        <div class="services_row">
+            <div class="section_col"> <img src="img/soft.jpg" alt="service img" class="service_img">
+                <h3 class="about_title">Від 999 грн</h3> <span class="about_text">М'які меблі</span> </div>
+            <div class="section_col"> <img src="img/divan.jpg" alt="service img" class="service_img">
+                <h3 class="about_title">Від 999 грн</h3> <span class="about_text">Дивани</span> </div>
+            <div class="section_col"> <img src="img/podushki.png" alt="service img" class="service_img">
+                <h3 class="about_title">Від 999 грн</h3> <span class="about_text">Подушки</span> </div>
+            <div class="section_col"> <img src="img/kover.png" alt="service img" class="service_img">
+                <h3 class="about_title">Від 999 грн</h3> <span class="about_text">Килими</span> </div>
+        </div>
+        <div class="services_row">
+            <div class="section_col"> <img src="img/puxovik.jpeg" alt="service img" class="service_img">
+                <h3 class="about_title">Від 999 грн</h3> <span class="about_text">Пуховики</span> </div>
+            <div class="section_col"> <img src="img/kolyaska.jpg" alt="service img" class="service_img">
+                <h3 class="about_title">Від 999 грн</h3> <span class="about_text">Дитячі коляски</span> </div>
+            <div class="section_col"> <img src="img/pol.jpg" alt="service img" class="service_img">
+                <h3 class="about_title">Від 999 грн</h3> <span class="about_text">Покриття підлоги</span> </div>
+            <div class="section_col"> <img src="img/salon.jpg" alt="service img" class="service_img">
+                <h3 class="about_title">Від 999 грн</h3> <span class="about_text">Салони авто</span> </div>
+        </div>
+    </section>
+    <section class="prices" id="prices">
+        <div class="accordion__wraper">
+            <div class="accordion__item">
+                <div class="accordion__title ">Дивани та ліжка</div>
+                <div class="accordion__content">
+                    <div class="content__wrapper">
+                        <table class="accordion__table">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="bonus">Розкладений</td>
+                                <td class="bonus">Дезинфекція парою</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Звичайний або кухонний</td>
+                                <td class="price">700 грн</td>
+                                <td class="price bonus">+100 грн</td>
+                                <td class="price bonus">+120 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Угловий</td>
+                                <td class="price">800 грн</td>
+                                <td class="price bonus">+100 грн</td>
+                                <td class="price bonus">+150 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Модульний</td>
+                                <td class="price">1 400 грн</td>
+                                <td class="price bonus">—</td>
+                                <td class="price bonus">+250 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">П-подібний</td>
+                                <td class="price">1 500 грн</td>
+                                <td class="price bonus">+100 грн</td>
+                                <td class="price bonus">+250 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Узголів'я ліжка</td>
+                                <td class="price">400 грн</td>
+                                <td class="price bonus">—</td>
+                                <td class="price bonus">+100 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Обід ліжка</td>
+                                <td class="price">350 грн</td>
+                                <td class="price bonus">—</td>
+                                <td class="price bonus">+100 грн</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title ">Матраци</div>
+                <div class="accordion__content">
+                    <div class="content__wrapper">
+                        <table class="accordion__table">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="bonus">Дезинфекція парою</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Малютка</td>
+                                <td class="price">250 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Односпальний</td>
+                                <td class="price">400 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Полуторний</td>
+                                <td class="price">650 грн</td>
+                                <td class="price_special">+120 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Двоспальний</td>
+                                <td class="price">700 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Двоспальний євро</td>
+                                <td class="price">700 грн</td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title ">Ковролін</div>
+                <div class="accordion__content">
+                    <div class="content__wrapper">
+                        <table class="accordion__table">
+                            <tr>
+                                <td class="service">До 50м²</td>
+                                <td class="price">65 грн/м²</td>
+                            </tr>
+                            <tr>
+                                <td class="service">До 100м²</td>
+                                <td class="price">50 грн/м²</td>
+                            </tr>
+                            <tr>
+                                <td class="service">До 200м²</td>
+                                <td class="price">40 грн/м²</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title ">Іграшки</div>
+                <div class="accordion__content">
+                    <div class="content__wrapper">
+                        <table class="accordion__table">
+                            <tr>
+                                <td class="service">Висотою до 25см</td>
+                                <td class="price">250 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Висотою до 54см</td>
+                                <td class="price">400 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Висотою до 1м</td>
+                                <td class="price">500 грн</td>
+                            </tr>
+                            <tr>
+                                <td class="service">Вище 1м</td>
+                                <td class="price">1 100 грн</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <h2 class="section_title">Зв'яжіться з нами</h2>
+        <div class="contacts__wrapper">
+            <form action="telegram.php" method="POST" class="contacts__form" autocomplete = "off"> 
+                <input type="text" class="form-contacts__input" name="user_name" required   placeholder="Ваше ім'я">
+                <input type="text" class="form-contacts__input" id="user_phone2" name="user_phone" required placeholder="+38 (0__) ___-__-__">
+                <textarea name="user_info" class="form-contacts__textarea" maxlength="210" placeholder="Опишіть забруднення за бажанням (коротко)"></textarea>
+                <input type="submit" class="form-contacts__submit">
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+       <div class="footer__container">
+            <div class="footer__container-info">
+               <div class="footer__logo">ЕКОХІМКА</div>
+               <img class="location" src="img/location_icon.png" alt="geo_icon">
+               <img class="phone" src="img/phone_icon.png" alt="phone_icon">
+               <div class="adress">Україна, м.Київ, <br> проспект Правди 45-А, офіс 309.</div>
+               <div class="number"> +38 099 999 99 99 <br> +38 099 999 99 99</div>
+            </div>
+            <div class="footer__container-nav">
+                <div class="footer__text">Навігація</div>
+                <nav class="footer__nav">
+                    <a href="#about" class="footer-nav__link">Про нас</a>
+                    <a href="#services" class="footer-nav__link">Послуги</a>
+                    <a href="#prices" class="footer-nav__link">Ціни</a>
+                    <a href="#contacts" class="footer-nav__link">Контакти</a>
+                </nav>
+            </div>
+<!--
+            <div class="footer__container-social">
+               <div class="footer__text">Скористайтеся нашим телеграм ботом!</div>
+                
+            </div>
+-->
+       </div>
+       <div class="rules">
+           © 2022 EKOXIMKA. Всі права захищені.
+       </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
