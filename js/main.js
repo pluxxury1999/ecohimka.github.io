@@ -48,7 +48,8 @@ $(document).ready(function(){
     // BURGER
     $(document).ready(function(){
    $('.header__burger').click(function(){
-      $('.header__burger, .burger__menu, .sidebar').toggleClass('active'); 
+      $('.header__burger, .burger__menu, .sidebar').toggleClass('active');
+       $('.body').toggleClass('lock');
    });
 });
 });

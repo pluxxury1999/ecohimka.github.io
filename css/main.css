@@ -1,23 +1,45 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
 
+.lock {
+    overflow: hidden;
+}
 
 /*------HEADER------*/
 .header {
     background-color: rgb(200, 255, 255);
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
-    grid-template-rows: 100px 400px;
+    grid-template-rows: 135px 400px;
     align-items: center;
 }
+
+
 .header_logo {
-    text-transform: uppercase;
+    display: flex;
+    width: 350px;
+    margin: 0 auto;
+}
+
+/*
+.header_logo {
     text-align: center;
     cursor: pointer;
-    font-size: 34px;
+    font-size: 44px;
+    color: white;
+    text-shadow: 1px 0px 1px black, 0px 1px 1px black;
 }
+
+.header_logo span{
+    cursor: pointer;
+    font-size: 44px;
+    font-family: 'Philosopher', sans-serif;
+    color: #00eb00;
+    text-shadow: none;
+}
+*/
 
 .header_nav {
     display: flex;
@@ -67,7 +89,7 @@ box-shadow: 0px 0px 15px rgb(125, 206, 255);
 
 .header_content {
     grid-column: 2/3;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .header_title {
@@ -155,7 +177,7 @@ box-shadow: 0px 0px 15px rgb(125, 206, 255);
     height: 100%;
     background-color: #fff;
     right: -100%;
-    transition: .5s
+    transition: .5s;
 }
 .sidebar.active {
     right: 0%;
@@ -421,11 +443,10 @@ box-shadow: 0px 0px 15px rgb(125, 206, 255);
     display: grid;
     background-color: rgb(200, 255, 255);
     grid-template-columns: 2fr 5fr 2fr;
-    
 }
 .accordion__wraper {
     grid-column: 2/3;
-    margin: 20px;
+    margin: 20px 0 20px 0;
 }
 
 .accordion__item {
@@ -441,7 +462,7 @@ box-shadow: 0px 0px 15px rgb(125, 206, 255);
     font-size: 40px;
     font-weight: 600;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     transition: .3s;
 }
 
@@ -462,7 +483,8 @@ box-shadow: 0px 0px 15px rgb(125, 206, 255);
 }
 
 .accordion__table {
-    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 tr {
@@ -470,7 +492,7 @@ tr {
 }
 
 .service {
-    max-width: 35%;
+    max-width: 100%;
     border-bottom: dotted;
     text-align: start;
 }
@@ -483,13 +505,13 @@ tr {
 
 .price_special {
     text-align: center;
-    width: 15%;
+    max-width: 15%;
 }
 
 .price {
     text-align: center;
     border-bottom: dotted;
-    width: 15%;
+    width: 25%;
 }
 
 /*------PRICES------*/
@@ -596,8 +618,8 @@ tr {
 
 
 .footer__logo {
-    text-align: center;
-    font-size: 34px;
+    margin: 0 auto;
+    width: 350px;
     grid-area: logo;
 }
 
@@ -614,6 +636,9 @@ tr {
 
 .adress {
     font-size: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 .number {
     font-size: 20px;
@@ -663,6 +688,16 @@ tr {
 }
 
 /*------FOOTER------*/
+
+@media (max-width: 1440px){
+    .prices {
+        grid-template-columns: 1.5fr 5fr 1.5fr;
+    }
+    .header_logo {
+        width: 270px;
+    }
+}
+
 @media (max-width: 1023px){
     .header_callback_btn {
         visibility: hidden;
@@ -700,6 +735,12 @@ tr {
     .nav_link {
         display: none;
     }
+    .header_title {
+        font-size: 30px;
+    }
+    .header_subtitle {
+        font-size: 20px;
+    }
     .header__burger {
         opacity: 1;
         visibility: visible;
@@ -713,7 +754,7 @@ tr {
     padding-top: 0px;
     }
     .prices {
-        grid-template-columns: 30px 1fr 30px
+        grid-template-columns: 0.1fr 1fr 0.1fr;
     }
     .accordion__title {
         font-size: 26px;
@@ -732,6 +773,9 @@ tr {
     tr {
     line-height: 1.5; 
     }
+    .price_special {
+        font-size: 16px;
+    }
     .section_title {
         font-size: 30px;
     }
@@ -741,6 +785,20 @@ tr {
     .footer {
         grid-template-columns: 10px 1fr 10px;
     }
+    .section_col:hover {
+        background-color: white;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .footer__logo {
+        max-width: 100%;
+    }
 }
+@media (max-width: 425px){
+    .prices {
+        grid-template-columns: 10px 1fr 10px;
+    }
+}
+
 
 
