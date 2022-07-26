@@ -46,11 +46,21 @@ $(document).ready(function(){
       return false;
     });
     // BURGER
-    $(document).ready(function(){
-   $('.header__burger').click(function(){
-      $('.header__burger, .burger__menu, .sidebar').toggleClass('active');
+    $('.header__burger').click(function(){
+       $('.header__burger, .burger__menu, .sidebar').toggleClass('active');
        $('.body').toggleClass('lock');
-   });
-});
+    });
+    
+    $("a.mobile-nav_link").click(function() {
+        $('.body').toggleClass('lock');
+        $('.header__burger, .burger__menu, .sidebar').toggleClass('active');
+        $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top
+        }, {
+         duration: 500,
+         easing: "swing"
+        });
+         return false;
+        });
 });
 
