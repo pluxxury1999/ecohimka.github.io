@@ -28,7 +28,7 @@ $(document).ready(function(){
 //scroll    
     $("a.nav_link").click(function() {
       $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top
+         scrollTop: $($(this).attr("href")).offset().top - 20
       }, {
          duration: 500,
          easing: "swing"
@@ -38,7 +38,7 @@ $(document).ready(function(){
     
     $("a.footer-nav__link").click(function() {
       $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top
+         scrollTop: $($(this).attr("href")).offset().top - 20
       }, {
          duration: 500,
          easing: "swing"
@@ -55,7 +55,7 @@ $(document).ready(function(){
         $('.body').toggleClass('lock');
         $('.header__burger, .burger__menu, .sidebar').toggleClass('active');
         $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top
+         scrollTop: $($(this).attr("href")).offset().top - 20
         }, {
          duration: 500,
          easing: "swing"
