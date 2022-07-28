@@ -36,7 +36,7 @@ $(document).ready(function(){
       return false;
     });
     
-    $("a.footer-nav__link").click(function() {
+    $("a.footer__nav-link").click(function() {
       $("html, body").animate({
          scrollTop: $($(this).attr("href")).offset().top - 20
       }, {
