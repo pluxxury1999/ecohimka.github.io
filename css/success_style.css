@@ -1,0 +1,124 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBold.eot');
+	src: local('☺'), url('../fonts/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat-SemiBold.ttf') format('truetype'), url('../fonts/Montserrat-SemiBold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.header {
+    background-color: rgb(200, 255, 255);
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__wrapper {
+    padding: 15px;
+}
+
+.header__logo { 
+    width: 350px;
+}
+
+.main__wrapper {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.main__wrapper p {
+    text-align: center;
+}
+
+.main__title {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.main__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.main__text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.first__row { 
+    margin-top: 40px;
+}
+
+.second__row {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.main__button {
+    text-decoration: none;
+    color:black;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:250px;
+    height: 60px;
+    box-shadow: 0px 0px 15px rgb(125, 206, 255);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.main__button:hover {
+    box-shadow: 5px 5px 5px  rgb(125, 206, 255), 
+    0 5px 15px rgb(125, 206, 255), 
+    -5px 0 15px rgb(125, 206, 255), 
+    0 -5px 15px rgb(125, 206, 255)
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.footer__wrapper {
+    background-color: black;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1/4;
+    padding: 15px 0 15px 0;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .header__logo {
+        width: 270px;
+    }
+    .main__wrapper {
+        margin: 15px;
+    }
+    .rules {
+        font-size: 12px;
+    }
+}
